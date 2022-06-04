@@ -20,7 +20,7 @@ int main(void)
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
-				if (((i * 100) + (j * 100) + k) != 789)
+				if (((i * 100) + (j * 10) + k) != 789)
 				{
 					putchar(',');
 					putchar(' ');
