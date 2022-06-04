@@ -9,9 +9,12 @@ int main(void)
 	char a = 'a';
 	int i = 1;
 
-	if (a != 'e' || a != 'q')
+	while (i <= 26)
 	{
-		putchar(a);
+		if (a != 'e' && a != 'q')
+		{
+			putchar(a);
+		}
 		a++;
 		i++;
 	}
