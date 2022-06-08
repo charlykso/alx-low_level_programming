@@ -14,6 +14,7 @@ int main(void)
 	first = 0;
 	second = 1;
 	sum = 0;
+	i = 0;
 	while (i < 98)
 	{
 		sum = first + second;
