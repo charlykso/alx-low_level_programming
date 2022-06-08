@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - a function that ptints alphabets
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 void print_alphabet(void)
 {
 	char ch;
-	
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		_putchar(ch);
