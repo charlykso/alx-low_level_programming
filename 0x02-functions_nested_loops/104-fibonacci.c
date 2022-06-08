@@ -6,24 +6,39 @@
  */
 int main(void)
 {
-	long int first;
-	long int second;
-	long int sum;
 	int i;
+	unsigned long first, second, sum, a, b, c, carry;
 
 	first = 0;
 	second = 1;
-	sum = 0;
-	i = 0;
-	while (i < 98)
+	for (i = 1; i <= 90; i++)
 	{
 		sum = first + second;
-		printf("%li, ", sum);
 		first = second;
 		second = sum;
+		printf("%lu, ", sum);
+	}
+	a = first % 1000;
+	first = first / 1000;
+	b = second % 1000;
+	second = second / 1000;
+	while (i <= 98)
+	{
+		carry = (a + b) / 1000;
+		c = (a + b) - carry * 1000;
+		sum = (first + second) + carry;
+		first = second;
+		second = sum;
+		a = b;
+		b = c;
+		if (c >= 100)
+			printf("%lu%lu", sum, c);
+		else
+			printf("%lu0%lu", sum, c);
+		if (i < 98)
+			printf(", ");
 		i++;
 	}
-	sum = first + second;
-	printf("%li\n", sum);
+	putchar('\n');
 	return (0);
 }
