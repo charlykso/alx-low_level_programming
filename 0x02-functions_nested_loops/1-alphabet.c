@@ -6,12 +6,7 @@
  */
 int main(void)
 {
-	char alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-		_putchar(alpha);
-	}
+	print_alphabet();
 	_putchar('\n');
 	return (0);
 }
