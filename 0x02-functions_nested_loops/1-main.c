@@ -4,4 +4,8 @@
  *
  * Return: Always 0 (Success)
  */
-print_alphabet();
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
