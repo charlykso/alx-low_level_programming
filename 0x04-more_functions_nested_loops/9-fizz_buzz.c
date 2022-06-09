@@ -23,8 +23,16 @@ int main(void)
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("BUZZ ");
-			continue;
+			if (i < 100)
+			{
+				printf("BUZZ ");
+				continue;
+			}
+			else
+			{
+				printf("BUZZ");
+				continue;
+			}
 		}
 		printf("%d ", i);
 	}
