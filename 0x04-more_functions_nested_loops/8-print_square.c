@@ -14,10 +14,6 @@ void print_square(int n)
 	{
 		for (j = 0; j < n; j++)
 		{
-			if (j > 9)
-			{
-				_putchar('#');
-			}
 			_putchar('#');
 		}
 		i++;
