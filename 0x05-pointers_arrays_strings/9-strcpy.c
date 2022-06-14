@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcpy = a function that coppies a string
+ * _strcpy - a function that coppies a string
  * @dest: a function parameter(destination)
  * @src: a function parameter(source)
  *
