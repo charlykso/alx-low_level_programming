@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strncpy - a function that coppies a string
  * @dest: a function parameter(destination)
@@ -9,16 +10,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int;
+	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
-	while (i < n)
+	for ( ; i < n; i++)
 	{
 		dest[i] = '\0';
-		i++;
 	}
 	return (dest);
 }
