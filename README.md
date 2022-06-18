@@ -1,1 +1,1 @@
-This is the sixth C program
+This is the first C program
