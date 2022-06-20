@@ -1,7 +1,6 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
-int _strlen(char *s);
 /**
  * _memcpy - function copies n bytes from memory area src to
  * memory area dest.  The memory areas must not overlap
@@ -13,34 +12,13 @@ int _strlen(char *s);
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i, j;
+	unsigned int i;
 
 	i = 0;
-	j = _strlen(dest);
-	j++;
 	while (i < n)
 	{
-		dest[j] = src[i];
+		*(dest + i) = *(src + i);
 		i++;
-		j++;
 	}
 	return (dest);
-}
-
-/**
- * _strlen - a function that returns string length
- * @s: a function parameter s
- *
- * Return: integer
- */
-int _strlen(char *s)
-{
-	int x;
-
-	x = 0;
-	while (s[x] != '\0')
-	{
-		x++;
-	}
-	return (x);
 }
