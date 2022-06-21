@@ -10,12 +10,21 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, sum1, sum2;
+	int i = 0, len, diag_sum = 0;
 
-	for (i = 0; i < size; i++)
+	len = size * size;
+	while (i < len)
 	{
-		sum1 += *(a + (size * i) + i);
-		sum2 += *(a + (size * i + size - 1));
+		diag_sum += a[i];
+		i += size + 1;
 	}
-	printf("%d, %d\n", sum1, sum2);
+	printf("%d, ", diag_sum);
+	i = size - 1;
+	diag_sum = 0;
+	while (i < len - size + 1)
+	{
+		diag_sum += a[i];
+		i += size - 1;
+	}
+	printf("%d\n", diag_sum);
 }
