@@ -1,6 +1,8 @@
 a
 _putchar
 s
+c
+g
 0-main.c
 1-main.c
 2-main.c
@@ -9,3 +11,4 @@ s
 5-main.c
 100-main.c
 101-main.c
+*.swp
