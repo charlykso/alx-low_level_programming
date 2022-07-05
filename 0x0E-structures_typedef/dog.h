@@ -6,6 +6,9 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
+/**
+*dog_t - Type def for struct dog
+*/
 };
 
 #endif
