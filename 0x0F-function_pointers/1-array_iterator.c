@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
-* array_iterator - a function that executes a function given as a parameter on each element of an array.
+* array_iterator - a function that executes a function given
+* as a parameter on each element of an array.
 * @array: the array to be printed
 * @size: the size of the array
 * @action: the function that will print the array
