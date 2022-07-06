@@ -11,7 +11,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i = 0;
+	signed int i = 0;
 
 	if (size > 0)
 	{
@@ -26,5 +26,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 				i++;
 			}
 		}
-		return (-1);
 	}
+	return (-1);
+}
