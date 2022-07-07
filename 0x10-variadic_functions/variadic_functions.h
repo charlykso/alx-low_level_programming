@@ -23,6 +23,6 @@ typedef struct printTypeStruct
 {
 	char *type;
 	void (*printer)(va_list);
-}printTypeStruct;
+} printTypeStruct;
 
 #endif
