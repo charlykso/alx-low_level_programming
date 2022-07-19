@@ -6,7 +6,7 @@
  * a new node at a given position.
  * @head: the pointer to the header.
  * @idx: index where the new node should be added
- * @n: the second parameter of the function
+ * @n: the data in the list
  *
  * Return: the address of the new node
  */
