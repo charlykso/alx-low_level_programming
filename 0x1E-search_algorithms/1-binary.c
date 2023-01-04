@@ -16,18 +16,21 @@ int binary_search(int *array, size_t size, int value)
 {
 	unsigned int start = 0;
 	unsigned int end = size - 1;
-	unsigned int middle = 0;
+	unsigned int middle;
 
-	while (start <= end)
+	if (array && value)
 	{
-		middle = (start + end) / 2;
-		print_search(array, start, end);
-		if (array[middle] == value)
-			return (middle);
-		if (array[middle] > value)
-			end = middle - 1;
-		else
-			start = middle + 1;
+		while (start <= end)
+		{
+			middle = (start + end) / 2;
+			print_search(array, start, end);
+			if (array[middle] == value)
+				return (middle);
+			if (array[middle] > value)
+				end = middle - 1;
+			else
+				start = middle + 1;
+		}
 	}
 	return (-1);
 }
